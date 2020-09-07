@@ -1,0 +1,25 @@
+.AppBar{
+    background-color: #f9cd48 !important;
+}
+.root{
+    flex-grow: 1
+}
+
+.menuButton{ 
+    margin-right: 10px !important;
+    color: black !important;
+}
+
+.title{
+    flex-grow: 1;
+    color: black;
+}
+
+.btnLogin{
+    color: black !important;
+}
+
+.aTypo{
+    color: black !important;
+    text-decoration: none;
+}
