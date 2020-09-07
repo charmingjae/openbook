@@ -8,6 +8,20 @@ import MenuIcon from "@material-ui/icons/Menu";
 import "../css/Header.css";
 
 class Header extends Component {
+  constructor(props) {
+    super(props);
+    this.stae = {
+      page: "Main",
+    };
+  }
+
+  selectLogin = async () => {
+    await this.setState({
+      page: "Login",
+    });
+    this.props.onSubmit(this.state.page);
+  };
+
   render() {
     return (
       <div className="root">
@@ -26,7 +40,11 @@ class Header extends Component {
                 Openbook
               </a>
             </Typography>
-            <Button color="inherit" className="btnLogin">
+            <Button
+              color="inherit"
+              className="btnLogin"
+              onClick={() => this.selectLogin()}
+            >
               로그인
             </Button>
           </Toolbar>
