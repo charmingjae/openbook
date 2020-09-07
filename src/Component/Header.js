@@ -27,7 +27,7 @@ class Header extends Component {
               </a>
             </Typography>
             <Button color="inherit" className="btnLogin">
-              Login
+              로그인
             </Button>
           </Toolbar>
         </AppBar>

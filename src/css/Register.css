@@ -1,16 +1,12 @@
-body{
-}
-
 .wrapper{
     position: absolute;
     height: 450px;
     width: 450px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -60%);
+    transform: translate(-50%, -50%);
     border-radius: 20px;
     text-align: center;
-    background-color: ;
 }
 
 .shwRegister{
