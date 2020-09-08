@@ -1,4 +1,4 @@
-.mainWrapper{
+#mainWrapper{
     position: absolute;
     height: 450px;
     width: 450px;
@@ -10,7 +10,7 @@
     background-color: white;
 }
 
-.mainContent{
+#mainContent{
     font-size: 150px;
     color: black;
     top: 50%;

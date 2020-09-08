@@ -35,11 +35,13 @@ class Header extends Component {
             >
               <MenuIcon />
             </IconButton>
+
             <Typography variant="h6" className="title">
-              <a className="aTypo" href="/">
+              <a className="aTypo" href="/main">
                 Openbook
               </a>
             </Typography>
+
             <Button
               color="inherit"
               className="btnLogin"
