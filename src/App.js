@@ -5,6 +5,8 @@ import Register from "./Component/Register";
 import Main from "./Component/Main";
 import Login from "./Component/Login";
 
+import axios from "axios";
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -12,8 +14,18 @@ class App extends Component {
       page: "Main",
       id: "",
       pw: "",
+      host: "",
     };
   }
+
+  componentDidMount() {
+    this._getHost();
+  }
+
+  _getHost = async () => {
+    const res = await axios.get("/api/host");
+    this.setState({ host: res.data.host });
+  };
 
   // * this.state.page 값에 따라 보여주는 Component 설정
   showComponent = (page) => {
@@ -40,7 +52,10 @@ class App extends Component {
           <Header onSubmit={this.subHeader} />
         </header>
 
-        <body>{this.showComponent(this.state.page)}</body>
+        <body>
+          {this.showComponent(this.state.page)}
+          <h3> {this.state.host}</h3>
+        </body>
       </>
     );
   }
