@@ -27,9 +27,10 @@ class App extends Component {
   };
 
   // * Page route, Login Status 받음
-  subHeader = (locPage) => {
+  subHeader = (locPage, lgStatus) => {
     this.setState({
       page: locPage,
+      lgStatus: lgStatus,
     });
   };
 

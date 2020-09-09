@@ -11,6 +11,7 @@ class Login extends Component {
     super(props);
     this.state = {
       page: "Main",
+      userid: "",
     };
   }
 
@@ -26,6 +27,13 @@ class Login extends Component {
     if (res.data) {
       console.log("Chk suc : ", res.data.suc);
       if (res.data.suc) {
+        sessionStorage.setItem("lgStatus", true);
+        sessionStorage.setItem("userid", this.state.userid);
+        this.props.onSubmit(
+          this.state.userid,
+          sessionStorage.getItem("lgStatus")
+        );
+        window.location.reload(true);
       } else {
         alert("아이디와 비밀번호를 확인하세요.");
       }
