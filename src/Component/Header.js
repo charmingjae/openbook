@@ -37,7 +37,7 @@ class Header extends Component {
             </IconButton>
 
             <Typography variant="h6" className="title">
-              <a className="aTypo" href="/main">
+              <a className="aTypo" href="/">
                 Openbook
               </a>
             </Typography>
