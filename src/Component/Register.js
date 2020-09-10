@@ -64,7 +64,7 @@ class Register extends Component {
               className="subLogin"
               variant="contained"
               color="primary"
-              type="subit"
+              type="submit"
             >
               회원가입
             </Button>

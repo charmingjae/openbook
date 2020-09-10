@@ -4,6 +4,7 @@ import Header from "./Component/Header";
 import Register from "./Component/Register";
 import Main from "./Component/Main";
 import Login from "./Component/Login";
+import Rank from "./Component/Rank";
 
 class App extends Component {
   constructor(props) {
@@ -18,11 +19,13 @@ class App extends Component {
   // * this.state.page 값에 따라 보여주는 Component 설정
   showComponent = (page) => {
     if (page === "Main") {
-      return <Main />;
+      return <Main onSubmit={this.subHeader} />;
     } else if (page === "Register") {
       return <Register />;
     } else if (page === "Login") {
       return <Login onSubmit={this.subHeader} />;
+    } else if (page === "Rank") {
+      return <Rank />;
     }
   };
 

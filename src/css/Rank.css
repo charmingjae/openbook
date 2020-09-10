@@ -1,0 +1,50 @@
+
+.rankWrapper{
+    width: 90%;
+    height: 500px;
+    background-color: green;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 5%;
+}
+
+
+.grade1{
+    background-color: #f9cd48;
+    height: 600px;
+    width: 33%;
+    float:left;
+    text-align:center;
+}
+
+.grade2{
+    background-color:#f9cd48;
+    height: 600px;
+    width: 33%;
+    float:left;
+    text-align:center;
+    margin-left: 7px;
+    margin-right: 3px;
+
+}
+
+.grade3{
+    background-color:#f9cd48;
+    height: 600px;
+    width: 33%;
+    float:left;
+    text-align:center;
+    margin-left: 5px;
+}
+
+.tbRank{
+    width: 100%;
+}
+
+thead{
+    background: black;
+    color: white;
+    
+}
