@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import "../css/Rank.css";
+import Paper from "@material-ui/core/Paper";
+import Grid from "@material-ui/core/Grid";
 
 class Rank extends Component {
   constructor(props) {
@@ -8,7 +10,21 @@ class Rank extends Component {
   }
 
   render() {
-    return <div className="rankWrapper"></div>;
+    return (
+      <div className="rootRank">
+        <Grid container spacing={3}>
+          <Grid item xs={12}>
+            <Paper className="paperRank">xs=12</Paper>
+          </Grid>
+          <Grid item xs={6}>
+            <Paper className="paperRank">xs=6</Paper>
+          </Grid>
+          <Grid item xs={6}>
+            <Paper className="paperRank">xs=6</Paper>
+          </Grid>
+        </Grid>
+      </div>
+    );
   }
 }
 

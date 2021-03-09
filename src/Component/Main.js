@@ -26,7 +26,7 @@ class Main extends Component {
     return (
       <>
         <div id="mainWrapper">
-          <h1 id="mainContent">OPENBOOK</h1>
+          <h1 id="mainContent">OPENBOOK_</h1>
           <Button
             className="btnGo"
             variant="contained"
